@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace helloworld
+{
+    class Program 
+    {
+        static void Main(string[] args)
+        {
+            int age = 20;
+            string name = "mahdi", family = "hadian", id = "97154002160068";
+
+            Console.Write( " my name is " + name + family + "\n my id is " + id + "\n and i'm " + age);
+            Console.ReadKey();
+
+        }
+    }
+}

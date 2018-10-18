@@ -1,0 +1,19 @@
+﻿using System;
+
+namespace hello
+{
+    class Barname 
+    {
+        static void Main(string[] s)
+        {
+            
+            	string name = "mohammad";
+		int age = 24;
+		string family = "hashemi";
+		std_id = "970065468721";
+
+            Console.Write( " my name is " + name + family + "\n my id is " + id + "\n and i'm " + age);
+            
+        }
+    }
+}

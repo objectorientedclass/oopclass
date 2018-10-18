@@ -1,0 +1,20 @@
+﻿using System;
+
+namespace hiworld
+{
+    class Barnameaval 
+    {
+        static void Main(string[] n)
+        {
+            
+            	string name = "mohsen";
+		int age = 23;
+		string family = "shahbazzade";
+		std_id = "9654822199457";
+
+            Console.Write( " my name is " + name + family + "\t");
+		Console.Write( " my id is " + id + "\n and i'm " + age);
+            
+        }
+    }
+}

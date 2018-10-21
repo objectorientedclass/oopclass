@@ -1,0 +1,21 @@
+﻿using System;
+
+namespace myclass
+{
+	class Personalinfo
+	{
+    		public static void Main()
+		{
+        	Console.WriteLine("ID-no : 5939100570");
+
+	        Console.WriteLine("Name  : hamidreza");
+
+	        Console.WriteLine("Family:pirhadi");
+
+	        Console.WriteLine("Major :IT-IT");
+
+	        Console.WriteLine("A-year:1397");
+
+		}
+	}
+}

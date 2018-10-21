@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Arash Zahedi");
+            Console.WriteLine("National Number 2930004101");
+            Console.WriteLine("Information Technology Engineering Information Trend");
+            Console.WriteLine("Entrance Fall 1397");
+            Console.WriteLine("phone Number 09193778392");
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cm; string name,family,major;
+            Console.Write("Enter CodeMeli\n");
+            cm = int.Parse(Console.ReadLine());
+            Console.Write("Enter Name\n");
+            name = (Console.ReadLine());
+            Console.Write("Enter Family\n");
+            family = (Console.ReadLine());
+            Console.Write("Enter Major\n");
+            major =(Console.ReadLine());
+            Console.Write("Codemeli={0}", cm);
+            Console.Write("Name={0}", name);
+            Console.Write("Family={0}", family);
+            Console.Write("Major={0}", major);
+            Console.ReadKey();
+        }
+    }
+}

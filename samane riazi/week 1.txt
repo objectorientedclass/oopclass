@@ -1,0 +1,22 @@
+﻿﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace consoleapp
+{
+    class pro
+    {
+        static void Main()
+        {
+            Console.WriteLine("Firstname-lastname:Samane Riazi");
+            Console.WriteLine("StudentNo:0011884061");
+            Console.WriteLine("StartFrom:1397");
+            Console.WriteLine("Field:IT-IT");
+
+            Console.ReadKey();
+
+        }
+    }
+}

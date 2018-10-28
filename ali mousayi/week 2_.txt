@@ -1,0 +1,32 @@
+﻿#include
+class rec{
+ int a,b;
+public:
+void input();
+void masahat();
+void mohit();
+};
+void rec::input()
+{
+ cin>>a>>b;
+}
+void rec::masahat()
+{
+ int mas;
+ mas=a*b;
+cout<<"masahat:"<<"  "<}
+void rec::mohit()
+{
+ int mohit;
+ mohit=2*(a+b);
+ cout<<"mohit:"<<"  "<}
+void main()
+{
+ rec c1;
+ c1.input();
+ c1.masahat();
+ c1.mohit();
+}
+
+------------------------------------------
+تمرین مساحت مستطیل ----علی موسایی

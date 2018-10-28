@@ -1,0 +1,33 @@
+﻿using System;
+
+    class Name_Moadel
+    {
+      public  static void Main()
+    {
+        string ID_number, name, family, barnameh, riazi, englisi;
+        int  number1, number2, number3,moadel;
+        Console.WriteLine("plese inter ID");
+        ID_number = Console.ReadLine();
+          Console.WriteLine("plese inter name");
+        name = Console.ReadLine();
+        Console.WriteLine("plese inter family");
+      family = Console.ReadLine();
+      Console.WriteLine("plese inter number barnameh");
+    barnameh = Console.ReadLine();
+     Console.WriteLine("plese inter number riazi");
+    riazi = Console.ReadLine();
+    Console.WriteLine("plese inter number englisi");
+    englisi = Console.ReadLine();
+    number1 = Int32.Parse(barnameh);
+    number2 = Int32.Parse(riazi);
+    number3 = Int32.Parse(englisi);
+  moadel = (number1 + number2 + number3) / 3;
+  Console.WriteLine("ID_NUMBER:"+ID_number);
+  Console.WriteLine("\nname: " +  name);
+  Console.WriteLine("\nfamily:" + family);
+  Console.WriteLine("\nMOADEL="+moadel);
+
+                }
+              
+    }
+

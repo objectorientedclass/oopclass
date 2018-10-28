@@ -1,0 +1,21 @@
+﻿using System;
+class AbaadMostatil
+{
+    public static void Main()
+    {
+        string length, width;
+        Console.WriteLine("plese Enter length");
+        length = Console.ReadLine();
+        Console.WriteLine("plese Enter width");
+        width = Console.ReadLine();
+        int number1, number2,masahat,mohit;
+        number1 = Convert.ToInt32(length);
+        number2 = Convert.ToInt32(width);
+        masahat = (number1 * number2);
+        mohit = (number1 + number2) * 2;
+        Console.WriteLine("\nmasahat=" + masahat);
+        Console.WriteLine("\nmohit=" + mohit);
+    }
+	
+
+}

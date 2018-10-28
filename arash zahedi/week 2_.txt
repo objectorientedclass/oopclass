@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace pr_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstnum, secondnum;
+
+            int num1, num2, masahat, mohit;        //num1 is tol -- num2 is arz
+
+            Console.Write("please insert tol:");
+            firstnum = Console.ReadLine();
+
+            Console.Write("please insert arz:");
+            secondnum = Console.ReadLine();
+
+            num1 = Int32.Parse(firstnum);
+            num2 = Int32.Parse(secondnum);
+
+            masahat = num1 * num2;
+            mohit = (num1 + num2) * 2;
+
+            Console.WriteLine("\nThe masahat is {0}", masahat);
+            Console.WriteLine("\nThe mohit is {0}", mohit);
+            Console.ReadKey();
+
+
+        }
+    }
+}

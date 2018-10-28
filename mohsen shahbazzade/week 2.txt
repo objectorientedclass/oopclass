@@ -1,0 +1,25 @@
+﻿using System;
+
+namespace hiooo
+{
+        class err 
+    {
+        static void Main(string[] args)
+        {
+            int height, width ;
+            
+            Console.Write("enter width : ");
+            string widthInput = Console.ReadLine();
+	    width = Int32.Parse(widthInput);            
+
+            Console.Write("enter height : ");
+            string heightInput = Console.ReadLine();
+	    height = Int32.Parse(heightInput);
+
+            Console.WriteLine("masahat : "+ width*height);
+
+            Console.WriteLine("mohit : "+ (width*height)/2);
+
+        }
+    }
+}

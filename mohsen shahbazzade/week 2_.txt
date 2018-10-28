@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace hellospace
+{
+        class info
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("enter student id : ");
+            string std_id = Console.ReadLine();
+            
+            Console.Write("enter student name : ");
+            string name = Console.ReadLine();
+            
+            Console.Write("enter student family : ");
+            string family = Console.ReadLine();
+
+            Console.Write("enter programming grade : ");
+            string programming = Console.ReadLine();
+            float programmingValue = Int32.Parse(programming);
+
+            Console.Write("enter math grade : ");
+            string math = Console.ReadLine();
+            float mathValue = Int32.Parse(math);
+
+            Console.Write("enter english grade : ");
+            string english = Console.ReadLine();
+            float englishValue = Int32.Parse(english);
+
+            float average = (englishValue + mathValue + englishValue) / 3 ;
+
+            Console.Write("student name is : " + name + family 
+                    + "\nstudent id is : " + std_id + "\nand average is : " + average);
+
+            
+            Console.ReadKey();
+        }
+    }
+}

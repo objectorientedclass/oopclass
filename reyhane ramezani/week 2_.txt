@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ConsoleApplication1
+{class Program
+    {
+       static void Main(string[] args)
+        {
+            //ÈÑäÇãå Çí ÈäæíÓíÏ ˜å Øæá æ ÚÑÖ ãÓØÊíá ÑÇ ÏÑíÇİÊ ãÍíØ æ ãÓÇÍÊ Âä ÑÇ äãÇíÔ ÏåÏ
+            int t,a;
+            Console.Write("Be Tartib Tool Va Arz Mostatil Ra Vared Konid:\n");
+            t = int.Parse(Console.ReadLine());
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Masahat Hast:={0}  Mohit Hast:={1}",a*t,(a+t)*2);
+            Console.Write("\n");
+            Console.Write("Press any key to exit");
+            Console.ReadKey();
+        }
+    }
+}

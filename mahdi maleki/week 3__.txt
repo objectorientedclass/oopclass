@@ -1,0 +1,15 @@
+int a, b, c;
+            Console.Write("Enetr 3 number\n");
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            	if (a > b & a > c) { Console.WriteLine("Bozorhtarin adad hast:= {0}\n", a); }
+            	  if (b > a & b > c) { Console.WriteLine("Bozorhtarin adad hast:= {0}\n", b); }
+            	    if (c > b & c > a) { Console.WriteLine("Bozorhtarin adad hast:= {0}\n", c); }
+            -------------------------------------------------------------------------------------
+            if (a < b & a < c) { Console.WriteLine("koochaktarin adad hast:= {0}\n", a); }
+             if (b < a & b < c) { Console.WriteLine("koochaktarin adad hast:= {0}\n", b); }
+               if (c < b & c < a) { Console.WriteLine("koochaktarin adad hast:= {0}\n", c); }
+            Console.WriteLine("\n");
+            Console.WriteLine("Press Any Key To Exit==>");
+            Console.ReadKey();

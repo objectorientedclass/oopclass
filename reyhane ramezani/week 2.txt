@@ -27,31 +27,3 @@ namespace ConsoleApplication1
         }
     }
 }
-////////////////////////////////////////////////////////////////
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleApplication1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            //ÈÑäÇãå Çí ÈäæíÓíÏ ˜å 3 ÊÇ äãÑå ÏÑÓ ÇÒ ˜ÇÑÈÑ ÏÑíÇÝÊ ˜äÏ æ ÏÑ äåÇíÊ ãÚÏá ÑÇ ÍÓÇÈ ˜äÏ
-            Console.Write("Be tartib nomreye riazi-englisi-barnamesazi ra vared konid\n");
-            float riazi,engilisi,barname,moadel;
-            riazi = float.Parse(Console.ReadLine());
-            engilisi = float.Parse(Console.ReadLine());
-            barname = float.Parse(Console.ReadLine());
-            moadel = (riazi + engilisi + barname) / 3;
-            Console.WriteLine("AVG IS=:{0}", moadel);
-            Console.WriteLine("\n");
-            Console.WriteLine("Press any key to exit==>");
-            Console.ReadKey();
-        }
-    }
-}
-------------------------------------------------------------------------------------------------------------------

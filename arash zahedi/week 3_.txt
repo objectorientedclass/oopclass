@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+            string number1, number2, number3, numb;
+
+            Console.Write("please enter numner1:");
+            number1 = Console.ReadLine();
+
+            Console.Write("please enter numner2:");
+            number2 = Console.ReadLine();
+
+            Console.Write("please enter numner3:");
+            number3 = Console.ReadLine();
+
+            num1 = Int32.Parse(number1);
+            num2 = Int32.Parse(number2);
+            num3 = Int32.Parse(number3);
+
+            if (num1 > num2 && num1 > num3)
+                Console.WriteLine("\nyour big number is {0}", num1);
+
+            if (num2 > num1 && num2 > num3)
+                Console.WriteLine("\nyour big number is {0}", num2);
+
+            if (num3 > num2 && num3 > num1)
+                Console.WriteLine("\nyour big number is {0}", num3);
+           
+            if (num1 < num2 && num1 < num3)
+                Console.WriteLine("\nyour small number is {0}", num1);
+
+            if (num2 < num1 && num2 < num3)
+                Console.WriteLine("\nyour small number is {0}", num2);
+
+            if (num3 < num2 && num3 < num1)
+                Console.WriteLine("\nyour small number is {0}", num3);
+            Console.ReadKey();
+
+        }
+
+    }
+}

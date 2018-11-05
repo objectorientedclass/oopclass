@@ -1,0 +1,41 @@
+﻿using System;
+
+namespace helloworld
+{
+        class boom 
+    {
+        static void Main(string[] args)
+        {
+	    Console.write("enter student's average : ");
+            string averageValue = Console.readLine();
+
+            float average = int32.parse(averageValue);
+
+            switch(average){
+                case 1:
+                    Console.WriteLine("zire diplom");
+                    break;
+                case 2:
+                    Console.WriteLine("diplom");
+                    break;
+                case 3:
+                    Console.WriteLine("foqe diplom");
+                    break;
+                case 4:
+                    Console.WriteLine("lisans");
+                    break;
+                case 5:
+                    Console.WriteLine("foqe lisans");
+                    break;
+                case 6:
+                    Console.WriteLine("doctora");
+                    break;
+                case 7:
+                    Console.WriteLine("naaamoshakhas");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,30 @@
+﻿using System;
+
+namespace helloworld
+{
+        class boom 
+    {
+        static void Main(string[] args)
+        {
+            Console.write("enter firstname : ");
+            string firstname = Console.readLine();
+
+            Console.write("enter lastname : ");
+            string lastname = Console.readLine();
+            
+            Console.write("enter student's average : ");
+            string averageValue = Console.readLine();
+
+            float average = int32.parse(averageValue);
+
+            if(average>=17)
+                Console.write("momtaz");
+            if(average<17 && average>=12)
+                Console.write("mamuli");
+            if(average<10)
+                Console.write("mashrut");
+
+            Console.ReadKey();
+        }
+    }
+}

@@ -1,0 +1,51 @@
+﻿using ConsoleApp2;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Test
+    {
+
+        static void Main(string[] args)
+        {
+            int[] number = new int[3];
+            int negativeNumbers = 0;
+            int zeroNumbers = 0;
+            int positiveNumbers = 0;
+
+            Console.Write("enter first number : ");
+            int num0 = Int32.Parse(Console.ReadLine());
+            numbers.append(num0);
+
+            Console.Write("enter second number : ");
+            int num1 = Int32.Parse(Console.ReadLine());
+            numbers.append(num1);
+
+            Console.Write("enter third number : ");
+            int num2 = Int32.Parse(Console.ReadLine());
+            numbers.append(num2);
+
+            Console.Write("enter fourth number : ");
+            int num3 = Int32.Parse(Console.ReadLine());
+            numbers.append(num3);
+
+            foreach (int result in numbers ) {
+                if (result == 0)
+                    zeroNumbers++;
+                else if (result > 0)
+                    positiveNumbers++;
+                else
+                    negativeNumbers++;
+            }
+
+            Console.WriteLine("zero count is : {0}\nnegative count is : {1}\npositive count is : {2}"
+                ,zeroNumbers,negativeNumbers,positiveNumbers);
+
+        }
+
+    }
+}

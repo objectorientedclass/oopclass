@@ -1,0 +1,38 @@
+﻿using ConsoleApp2;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Test
+    {
+
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[10];
+            int i = 0, odd = 0, even = 0;
+
+            while (i < 10)
+            {
+		Console.Write("enter 10 diffrent numbers : ");
+                numbers[i] = Int32.Parse(Console.ReadLine());
+                i++;
+            }
+            foreach (int result in numbers)
+            {
+                if (result % 2 == 0)
+                    even++;
+                else
+                    odd++;
+            }
+
+            Console.WriteLine("even numbers : {0}\nodd numbers : {1}", even, odd);
+            Console.ReadKey();
+        }
+
+    }
+
+}

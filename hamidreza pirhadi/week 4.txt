@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace fibonachi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            Console.WriteLine("enter number;");
+            n = Convert.ToInt32(Console.ReadLine());
+            int a = 0, b = 1, c, i;
+            Console.WriteLine("{0}    {1}", a, b);
+            for (i = 3; i <= n; i++)
+            {
+                c = a + b;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                
+                Console.WriteLine("{0,6}", c);
+                a = b;
+                b = c;
+               
+
+            }
+        }
+    }
+}

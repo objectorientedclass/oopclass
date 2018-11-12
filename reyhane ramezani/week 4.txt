@@ -1,0 +1,42 @@
+///facto
+namespace sheygara
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            a();
+        }
+
+        static void a()
+        {
+            System.Console.Write("enter number : ");
+            int Number = int.Parse(System.Console.ReadLine());
+            int i = 1;
+            int result = 1;
+            if (Number >= 0)
+            {
+                if (Number == 0)
+                {
+                    System.Console.WriteLine("1");
+                }
+                else
+                {
+                    while (i <= Number)
+                    {
+                        result *= i;
+                        i++;
+                    }
+                    System.Console.WriteLine(result.ToString());
+                }
+
+            }
+            else
+            {
+                System.Console.WriteLine("Error");
+            }
+
+            a();
+        }
+    }
+}

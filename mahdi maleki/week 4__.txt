@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        i  
+  Console.Write(" enter number : ");
+            int n = int.Parse(Console.ReadLine());
+            if (n % 2 == 1)
+                Console.WriteLine("fard.");
+            else
+                Console.WriteLine("zoj.");
+            Console.ReadKey();
+        }
+    }
+}
+/////------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i, a = 0, b = 0; float c;
+            Console.Write("10 adad vared konid:\n");
+            for (i=1;i<=10;i++)
+            {
+                c = float.Parse(Console.ReadLine());
+                if (c % 2 == 0)
+                {
+                    a = a + 1;
+                }
+                else
+                {
+                    b = b + 1;
+                }
+                Console.WriteLine("tedad adad haye zoj=:{0}", a);
+                Console.WriteLine("tedad adad haye fard:{0}", b);
+
+                Console.WriteLine("\n");
+                Console.WriteLine("press any key to exit==>");
+                Console.ReadKey();
+            }
+        }
+    }
+}
+

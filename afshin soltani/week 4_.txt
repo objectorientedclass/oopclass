@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int b =1;
+            Console.Write("enter number :>) ");
+            int n = int.Parse(Console.ReadLine());
+            for(int i=1;i<=n;i++)
+            { b *= i;
+            }
+            Console.WriteLine("...javab...");
+            Console.WriteLine(b);
+            Console.WriteLine("..");
+            Console.ReadKey();
+        }
+    }
+}

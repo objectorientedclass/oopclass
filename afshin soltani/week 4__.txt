@@ -1,0 +1,40 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication24
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] i = new int[9];
+
+            double a, b, c;
+            Console.Write("enter 10 numbers :");
+            i[c] = int.Parse(Console.ReadLine());
+            for (c = 1; c <= 10; c++)
+            {
+                if (c % 2 == 0)
+                {
+                    c == a;
+                    Console.Writeline("number is even number :" +a);
+                    a++;
+                }
+                else
+                {
+                    c == b;
+                    Console.Writeline("number is odd number" + b);
+                    b++;
+                }
+                Console.ReadKey();
+            }
+        }
+    }
+}
+    
+        
+    
+

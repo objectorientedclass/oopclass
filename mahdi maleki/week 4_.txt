@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication22
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, c, d, t = 0;
+            Console.Write("jomle ra vared konid:\n");
+            a = int.Parse(Console.ReadLine());
+            b = 1;
+            d = 1;
+            for (c = 1; c <= a; c++) ;
+            {
+                t = b;
+                b = d;
+                d = d + t;
+            }
+            Console.Write("jomleye fib=: {0}", d);
+            Console.WriteLine("\n");
+            Console.WriteLine("press any key to exit==>");
+            Console.ReadKey();
+        }
+    }
+}

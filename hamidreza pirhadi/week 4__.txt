@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace „À» _Ê„‰›Ì
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter number;");
+            int[] number = new int[6];
+            int mosbat = 0, manfi = 0, sefr = 0;
+            for (int i = 0; i < 6; i++)
+                number[i] = Convert.ToInt32(Console.ReadLine());
+            foreach (int reasult in number)
+            {
+                if (reasult == 0)
+                    sefr++;
+                else if (reasult > 0)
+                    mosbat++;
+                else
+                    manfi++;
+            }
+            Console.WriteLine("mosbat:{0}\n manfi:{1}\n sefr:{2}", mosbat, manfi, sefr);
+
+            Console.ReadKey();
+
+        }
+    }
+}

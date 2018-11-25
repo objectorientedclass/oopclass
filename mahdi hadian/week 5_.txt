@@ -1,0 +1,28 @@
+﻿using system;
+namespace app{
+
+    public class myapp{
+        static void main(string[] args){
+		int result;
+            console.write("please enter 'a' value : ");
+            int a = Int.Parse(console.readline());
+            console.writeLine("please enter 'b' value : ");
+            int b = Int.Parse(console.readline());
+            console.writeLine("please enter 'c' value : ");
+            int c = Int.Parse(console.readline());
+
+            console.write("root is : " + calcRoot.result );
+        }
+
+        public int calcRoot(int a, int b, int c){
+            //does something here
+		result = ((b*b)-(4*a*c));
+		if(result < 0 )
+			console.writeLine("rishe haqiqi nadarad");
+		else 
+			console.writeLine("rishe haqiqi darad {0}",result);
+        }
+	console.ReadKey();
+    }
+
+}

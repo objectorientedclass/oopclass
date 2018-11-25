@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace „”«Õ _Ê_„ÕÌÿ1
+{
+    class typetest
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            Console.Write("tol=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("arz=");
+            b = Convert.ToInt32(Console.ReadLine());
+            int masahat = datatypetest(a, b);
+            int mohit = datatypetest1(a, b);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("masahat:" + masahat);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine ("mohit:" + mohit);
+            Console.ReadKey();
+        }
+        static int datatypetest(int a, int b)
+        {
+            return (a * b );
+
+        }
+        static int datatypetest1(int a, int b)
+        {
+            return (a + b) * 2;
+        }
+    }
+}
+
+

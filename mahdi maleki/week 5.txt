@@ -1,0 +1,21 @@
+using System;
+class DataTypeTest
+{
+   public int variableVal;
+}
+class DataTypeTestRef
+{
+   static void Main()
+   {
+      DataTypeTest dataTest = new DataTypeTest();
+      dataTest.variableVal = 100;
+      funcDataTypeTest(dataTest);
+  Console.WriteLine(dataTest.variableVal); 
+   }   
+using System;class DataTypeTest{ 
+  public static void Main()   {    
+ int variableVal = 100;    
+ funcTest(variableVal);     
+Console.WriteLine(“This value of the variable  
+                          is {0}",variableVal);  
+   }

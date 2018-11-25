@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace «⁄œ«œ_»“—ê_ÊòÊçò
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Enter 10 number;");
+            int[] a = new int[10];
+            int mosbat = 0, manfi = 0, sefr = 0;
+            for (int i = 0; i < 10; i++)
+                a[i] = Int32.Parse(Console.ReadLine());
+            {
+                foreach (int adad in a)
+                {
+                    if (adad == 0)
+                        sefr++;
+                    else
+                        if (adad > 0)
+                            mosbat++;
+                        else
+                            manfi++;
+
+                }
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("sefr;{0}\t mosbat:{1}\t manfi:{2}", sefr, mosbat, manfi);
+                Console.ReadKey();
+            }
+               
+
+            
+            }
+        }
+    }
+

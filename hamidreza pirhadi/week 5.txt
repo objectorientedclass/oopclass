@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace гзого_хря░_Ф≤Ф█≤
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Enter 10 number;");
+            int[] a = new int[10];
+            for (int i = 0; i < 10; i++)
+            a[i]=Int32.Parse(Console.ReadLine());
+            int max = a[0], min = a[0];
+            for (int j = 1; j < 10; j++)
+            {
+                if (a[j] > max)
+                    max = a[j];
+            }
+            for (int k = 1; k < 10; k++)
+            {
+                if (a[k] < min)
+                    min = a[k];
+            }
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("max is:\t{0}\n min is: {1}", max,min);
+            Console.ReadKey();
+
+            
+        }
+    }
+}

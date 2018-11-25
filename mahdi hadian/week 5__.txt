@@ -1,0 +1,29 @@
+﻿using system;
+namespace app{
+
+    public class myapp{
+        static void main(string[] args){
+            int min, max = 0, tenArray[10] ;
+            
+            do{
+                tenArray[i] = Int.Parse(console.Readline());
+                i++; 
+            }while(i<10)
+
+            i = 0;
+
+            foreach(int res : tenArray[i]){
+                if(res > max)
+                    max = res;
+                elseif(res < max)
+                    min = res;
+                i++;
+            }
+
+            console.writeLine("max is : {0}\nandmin is : {1}",max,min);
+		console.ReadKey();
+
+        }
+    }
+
+}

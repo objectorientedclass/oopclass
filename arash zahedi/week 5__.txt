@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int tol, arz;
+
+            Console.WriteLine("enter tol :");
+            tol = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("enter arz :");
+            arz = Int32.Parse(Console.ReadLine());
+
+            datatypetest1(tol, arz);
+        }
+         public static void datatypetest1(int a, int b)
+        {
+            int mohit = (a + b) * 2;
+            Console.WriteLine("\nmohit is: {0}", mohit);
+
+            int masahat = a * b;
+            Console.WriteLine("\nmasahat is: {0}", masahat);
+
+            Console.ReadKey();
+        }
+
+    }
+}

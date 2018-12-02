@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            System.Console.Write("Please Enter a : ");
+            int a = int.Parse(System.Console.ReadLine());
+
+            System.Console.Write("Please Enter b : ");
+            int b = int.Parse(System.Console.ReadLine());
+
+            System.Console.Write("Please Enter c : ");
+            int c = int.Parse(System.Console.ReadLine());
+
+            sum(int a, int b, int c);
+
+        }
+        static void sum(int a, int b, int c)
+        {
+            int delta = (b * b) - (4 * a * c);
+
+            if (delta > 0)
+            {
+                double x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                double x2 = (-b - Math.Sqrt(delta)) / (2 * a);
+                System.Console.WriteLine("x1 = " + x1 + "\nx2 = " + x2);
+            }
+
+            else if (delta == 0)
+            {
+
+                double x = (-b + Math.Sqrt(delta)) / (2 * a);
+                System.Console.WriteLine("x = " + x);
+
+            }
+
+            else
+            {
+                System.Console.WriteLine("No Answer");
+            }
+            Console.ReadKey();
+
+        }
+
+    }
+}

@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ÇÓÊÑÇ˜Ñ
+{
+    class Program
+    {
+        struct student
+        {
+            public string name;
+            public string family;
+            public int number_riazi;
+            public int number_barname;
+            public int number_zaban;
+        }
+        public class teststructure
+        {
+            public static void Main(string[] args)
+            {
+
+                student student1;
+                student1.name ="hamidreza";
+                student1.family = "pirhadi";
+                student1.number_riazi = 15;
+                student1.number_barname = 18;
+                student1.number_zaban = 19;
+                Console.WriteLine("name:\t" + student1.name);
+                Console.WriteLine("family;\t" + student1.family);
+                Console.WriteLine("riazi;\t" + student1.number_riazi);
+                Console.WriteLine("barname:\t" + student1.number_barname);
+                Console.WriteLine("zaban:\t" + student1.number_zaban);
+                Console.ReadKey();
+
+            }
+        }
+
+    }
+
+}
+

@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication9
+{
+   public class Date
+    {
+        public int roz, mah, sal;
+       
+        public Date()
+        {
+            roz = 0;
+            mah = 0;
+            sal = 0;
+
+        }
+        public  Date(int roz, int mah, int sal)
+        {
+            //Console.WriteLine("enter roz");
+            //roz = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter mah");
+            //mah = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("enter sal");
+            //sal = Convert.ToInt32(Console.ReadLine());
+            roz = 10; mah = 09; sal =1397;
+        }
+
+         static void Main(string[] args)
+        {
+            
+            Date date1 = new Date();
+           
+            Console.Write(date1.roz+":"+date1.mah+":"+date1.sal);
+            Console.ReadKey();
+        }
+    }
+}

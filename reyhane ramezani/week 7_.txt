@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication28
+{
+    class complex
+    {
+        public double real;
+        public double imagine;
+
+        public complex()
+        {
+
+        }
+        public complex(double real , double imagine)
+        {
+            this.real = real;
+            this.imagine = imagine;
+        }
+
+        public double sum()
+        {
+            return real + imagine;
+
+        }
+
+public double subtraction()
+        {
+            return real - imagine;
+        }
+
+        public void display()
+{
+
+}
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}

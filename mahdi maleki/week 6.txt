@@ -1,0 +1,23 @@
+///////////
+...
+struct student
+{
+public structstudent;
+
+int cdan; string name,family; float; program,math,language
+            	Console.Write("Enter CodeMeli\n");
+            cdan = int.Parse(Console.ReadLine());
+            	Console.Write("Enter Name\n");
+            name = (Console.ReadLine());
+            	Console.Write("Enter Family\n");
+            family = (Console.ReadLine());
+Console.Write("enter program");
+	program=int32.parse(console.readline());
+Console.Write("enter math");
+	math=int32.parse(console.readline());
+Console.Write("enter language");
+        language=int32.parse(console.readline());
+}
+
+
+public structshow;

@@ -1,0 +1,57 @@
+/////////////////////////////////////////////////////////////
+using System;
+public class Time1 : Object
+ {
+ 	private int hour;
+ 	private int minute;
+	 private int second; 
+ 
+     Time1 constructor initializes instance variables to zero to set default time to midnight
+ public Time1()
+   {
+	 SetTime( 0, 0, 0 );
+  }
+
+ Set new time value in 24-hour format. Perform validity
+ checks on the data. Set invalid values to zero.
+ public void SetTime(
+ int hourValue, int minuteValue, int secondValue )
+
+{
+	 hour = ( hourValue >= 0 && hourValue < 24 ) ?
+	   hourValue : 0;
+	    minute = ( minuteValue >= 0 && minuteValue < 60 ) ?
+	      minuteValue : 0;
+using System;
+
+ Time1 class definition
+ public class Time1 : Object
+ {
+     Time1 constructor initializes instance variables to
+	 zero to set default time to midnight
+ public Time1()
+ {
+ 	SetTime( 0, 0, 0 );
+ }
+
+    Set new time value in 24-hour format. Perform validity
+ 	checks on the data. Set invalid values to zero.
+public void SetTime(
+ 	int hourValue, int minuteValue, int secondValue )
+ {
+ 	 	hour = ( hourValue >= 0 && hourValue < 24 ) ?
+ 	hourValue : 0;
+ 	 	minute = ( minuteValue >= 0 && minuteValue < 60 ) ?
+ 	minuteValue : 0;
+}
+.
+.
+.
+.
+.
+
+
+
+
+
+

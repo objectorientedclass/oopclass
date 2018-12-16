@@ -1,0 +1,117 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maz
+{
+    class Motavazi
+    {
+        public int tol, arz, ertefa;
+        public Motavazi()
+        {
+            tol = 0;
+            arz = 0;
+            ertefa = 0;
+        }
+        public Motavazi(int g, int a, int e)
+        {
+            g = tol;
+            a = arz;
+            e = ertefa;
+        }
+        public void mohit(int ghaede ,int ertefa)
+        {
+           int mohit;
+            mohit= (ertefa + ghaede) * 2;
+
+            Console.WriteLine("mohit motavazi ={0}", mohit);
+            
+        }
+        public void masahat(int ghaede ,int ertefa)
+        {
+          int  masahat = (ertefa * ghaede);//ÿÊ·=ﬁ«⁄œÂ
+            Console.WriteLine("masahat motavazi={0}", masahat);
+        }
+    }
+}
+  
+1111111111111111111111111111
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maz
+{
+    class mostatil : Motavazi     //„” ÿÌ·
+    {
+        public mostatil()
+        {
+            tol = 0;
+            arz = 0;
+        }
+        public void mohit(int tol, int arz)
+        {
+            Console.WriteLine("mohit mostatil={0}", (tol + arz) * 2);
+        }
+        public void masahat(int tol, int arz)
+        {
+            Console.WriteLine("masahat mostatil={0}", tol * arz);
+        }
+    }
+}
+222222222222222222222222222222
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maz
+{
+    class moraba : Motavazi    //„—»⁄
+    {
+        public moraba()
+        {
+            tol = 0;
+            arz = 0;
+        }
+        public void mohit(int tol, int arz)
+        {
+            Console.WriteLine("mohit moraba={0}", (tol + arz) * 2);
+        }
+        public void masahat(int tol, int arz)
+        {
+            Console.WriteLine("masahat moraba={0}", tol * arz);
+        }
+    }
+}
+333333333333333333333333333333333333333333333
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maz
+{
+    class main              //main «Ã—«
+    {
+        public static void Main()
+        {
+            Motavazi motavazi1 = new Motavazi();
+            mostatil mostatil1 = new mostatil();
+            moraba moraba1 = new moraba();
+            motavazi1.masahat(10,5);
+            motavazi1.mohit(10,5);
+            mostatil1.masahat(4, 6);
+            mostatil1.mohit(4, 6);
+            moraba1.masahat(4, 4);
+            moraba1.mohit(4, 4);
+            Console.ReadKey();
+        }
+    }
+}

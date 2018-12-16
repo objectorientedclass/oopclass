@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Test
+    {
+        static void Main(string[] args)
+        {
+            Point p = new Point(5);
+            p.Display();
+            circle c = new circle(24);
+            c.Display();
+        }
+    }
+
+    class Point
+    {
+        public double Radius;
+
+        public Point() {}
+
+        public Point(double Radius)
+        {
+            this.Radius = Radius;
+        }
+
+        public virtual void Display()
+        {
+            Console.WriteLine("Point Radius : " + Radius);
+        }
+
+    }
+
+    class circle : Point
+    {
+        public circle(double Radius) : base(Radius)
+        {
+
+        }
+        public override void Display()
+        {
+            Console.WriteLine("Circle Radius : " + Radius);
+        }
+    }
+
+}

@@ -1,0 +1,57 @@
+﻿using system;
+
+namespace x{
+
+    class Motevaziolazla{
+        int tul;
+        int arz;
+        int ertefa;
+
+        public void Motevaziolazla(){}
+        
+        public void Motevaziolazla(int tul, int arz, int ertefa){
+            this.tul = tul;
+            this.arz = arz;
+            this.ertefa = ertefa;
+        }
+
+        void showInfo(){
+            console.writeLine("this shape info is : "+tul+"\n"+arz+"\n"+ertefa);
+        }
+
+        public int calcArea(){
+        }
+        
+        public int calcPrime(){
+        }
+
+    }
+
+    class Mostatil : Motevaziolazla{
+        public override calcArea(){
+
+        }
+        public override calcPrime(){
+            
+        }
+    }
+
+    class Moraba{
+        public void Moraba(){}
+
+        public override calcArea(){
+
+        }
+        public override calcPrime(){
+            
+        }
+    }
+
+    class test{
+        public static void main(string args[]){
+            Moraba moraba = new Moraba();
+            moraba.calcArea();
+            moraba.calcPrime();
+        }
+    }
+}

@@ -1,0 +1,120 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parallelogram
+{
+    class Parallelogram
+    {
+        public int tol, arz, ertefa, pramasahat, pramohit;
+
+        public Parallelogram()
+        {
+            tol = 25;
+            arz = 10;
+            ertefa = 12;
+        }
+        public Parallelogram(int tol, int arz)
+        {
+
+             pramasahat = tol * arz;
+
+             pramohit = (tol + arz) * 2;
+        }
+        public static int paramohit(int a, int b)
+        {
+            return (a + b) * 2;
+        }
+        public static int paramasahat(int a, int b)
+        {
+            return a * b;
+        }
+
+    }
+}
+
+
+------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parallelogram
+{
+    class Rectangle : Parallelogram
+    {
+
+    }
+}
+
+
+----------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parallelogram
+{
+    class Square : Parallelogram
+    {
+        public static int squmohit(int tol)
+        {
+            return tol * 4;
+        }
+        public static int squmasahat(int tol)
+        {
+            return tol * 2;
+        }
+    }
+}
+
+
+-------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Parallelogram
+{
+    class Test
+    {
+        static void Main(string[] args)
+        {
+            Parallelogram para = new Parallelogram();
+
+            Console.WriteLine(para.pramasahat(15,10));
+
+
+            Console.WriteLine("para is :{0}", para);
+
+            Rectangle rec = new Rectangle();
+
+            Square squ = new Square();
+
+
+            Console.WriteLine("Square mohit is:{0}", Square.squmohit(25));
+
+            Console.WriteLine("Square masahat is:{0}", Square.squmasahat(25));
+
+            Console.WriteLine("Rectangle mohit is:{0}", Rectangle.paramohit(15, 20));
+
+            Console.WriteLine("Rectangle masahat is:{0}", Rectangle.paramasahat(15, 20));
+
+            Console.WriteLine("Parallelogram masahat is:{0}", Parallelogram.paramasahat(15, 10));
+
+            Console.WriteLine("Parallelogram mohit is:{0}", Parallelogram.paramohit(15, 10));
+
+
+
+            Console.ReadKey();
+        }
+    }
+}

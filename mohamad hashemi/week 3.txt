@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rotbehdanshjo
+{
+    class Rotbehdanshjo
+    {
+        static void Main(string[] args)
+        {
+            string name, family;
+            int moadel;
+            Console.WriteLine("plese enter name:");
+            name = Console.ReadLine();
+            Console.WriteLine("plese enter family:");
+            family = Console.ReadLine();
+            Console.WriteLine("plese enter moadel:");
+            moadel = Int32.Parse(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("name and family:" + name + family);
+            Console.ForegroundColor = ConsoleColor.Green;
+            if (moadel > 17)
+                Console.WriteLine("rotbeh:daneshjo momtaz");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            if (17 >= moadel && moadel >= 12)
+                Console.WriteLine("rotbeh:daneshjo mamoli");
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (moadel < 12)
+                Console.WriteLine("rotbeh:daneshjo mashrot");
+
+            Console.ReadKey();
+
+
+
+        }
+    }
+}

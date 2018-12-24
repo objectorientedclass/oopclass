@@ -1,0 +1,24 @@
+﻿using system;
+namespace app{
+
+    public class DataTypeTest{
+        static void main(string[] args){
+
+            console.write("please enter the width value : ");
+            int width = Int.Parse(console.readline());
+            console.write("please enter the height value : ");
+            int height = Int.Parse(console.readline());
+
+            console.writeLine("mohit : {0} \nmasahat : {1}"
+                    ,TypeTest.mohit,TypeTest.masahat);
+
+            console.ReadKey();
+        }
+
+        public TypeTest(int width, int height){
+            int masahat = width * height;
+            int mohit = width * height / 2;
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication29
+{
+    class complex_text
+    {
+        static void Main(string[] args)
+        {
+            double c1 = 12;
+                double c2= 21;
+
+                    Console.WriteLine("jam c1 & c2 : " + (c1 + c2));
+            Console.WriteLine ("tafrigh c1 & c2 : " + (c1 - c2));
+            Console.ReadKey();
+
+        }
+    }
+}

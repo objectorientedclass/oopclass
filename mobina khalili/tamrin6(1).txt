@@ -1,0 +1,31 @@
+byte a;
+            Console.WriteLine("Code Madrak Ra Vared Konid\n");
+              a = byte.Parse(Console.ReadLine());
+            switch (a)
+            {
+                case 1:
+                    Console.Write("Madrak ZireDiplom Ast");
+                    break;
+                case 2:
+                    Console.Write("Madrak Foghe Diplom Ast");
+                    break;
+                case 3:
+                    Console.Write("Madrak ZireDiplom Ast");
+                    break;
+                case 4:
+                    Console.Write("Madrak Lisans Ast");
+                    break;
+                case 5:
+                    Console.Write("Madrak Foghe Lisans Ast");
+                    break;
+                case 6:
+                    Console.Write("Madrak PH-D Ast");
+                    break;
+                case 7:
+                    Console.Write("Madrak Namoshakhas Ast");
+                    break;
+        
+            }
+            Console.WriteLine("\n");
+            Console.WriteLine("Press Any Key To Exit==>");
+            Console.ReadKey();

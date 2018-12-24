@@ -1,20 +1,15 @@
-﻿﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
-namespace consoleapp
+namespace helloworld
 {
-    class pro
+    class Program 
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Firstname-lastname:Samane Riazi");
-            Console.WriteLine("StudentNo:0011884061");
-            Console.WriteLine("StartFrom:1397");
-            Console.WriteLine("Field:IT-IT");
+            int age = 20;
+            string name = "mahdi", family = "hadian", id = "97154002160068";
 
+            Console.Write( " my name is " + name + family + "\n my id is " + id + "\n and i'm " + age);
             Console.ReadKey();
 
         }

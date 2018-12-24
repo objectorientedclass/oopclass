@@ -1,0 +1,39 @@
+﻿using System;
+
+namespace helloworld
+{
+        class boom 
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("enter student id : ");
+            string std_id = Console.ReadLine();
+            
+            Console.Write("enter student name : ");
+            string name = Console.ReadLine();
+            
+            Console.Write("enter student family : ");
+            string family = Console.ReadLine();
+
+            Console.Write("enter programming grade : ");
+            string programmingLesson = Console.ReadLine();
+            float programmingLessonValue = Int32.Parse(programmingLesson);
+
+            Console.Write("enter math grade : ");
+            string mathLesson = Console.ReadLine();
+            float mathLessonValue = Int32.Parse(mathLesson);
+
+            Console.Write("enter english grade : ");
+            string englishLesson = Console.ReadLine();
+            float englishLessonValue = Int32.Parse(englishLesson);
+
+            float average = (englishLessonValue + mathLessonValue + englishLessonValue) / 3 ;
+
+            Console.Write("student name is : " + name + family 
+                    + "\nstudent id is : " + std_id + "\nand average is : " + average);
+
+            
+            Console.ReadKey();
+        }
+    }
+}

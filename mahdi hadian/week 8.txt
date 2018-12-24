@@ -1,0 +1,102 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Test
+    {
+        static void Main(string[] args)
+        {
+            Parallelogram P = new Parallelogram(12,4,6);
+            Rectangle R = new Rectangle(6);
+            Square S = new Square(12);
+
+            P.Display();
+            R.Display();
+            S.Display();
+
+        }
+    }
+
+    class Parallelogram
+    {
+        public double length;
+        public double height;
+        public double width;
+
+        public Parallelogram() { }
+
+        public Parallelogram(double length, double height, double width)
+        {
+            this.length = length;
+            this.height = height;
+            this.width = width;
+        }
+
+        public virtual double Area()
+        {
+            return length * (height + width);
+        }
+
+        public virtual double Environment()
+        {
+            return 2 * (height + width); 
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Area : " + Area());
+            Console.WriteLine("Environment : " + Environment());
+        }
+
+    }
+
+    class Rectangle : Parallelogram
+    {
+        public double Radius;
+
+        public Rectangle() : base() {}
+
+        public Rectangle(double Radius)
+        {
+            this.Radius = Radius;
+        }
+
+        public override double Area()
+        {
+            return 3.14 * (Radius * Radius);
+        }
+
+        public override double Environment()
+        {
+            return 3.14 * (Radius * 2);
+        }
+    }
+
+    class Square : Parallelogram
+    {
+        public double side;
+
+        public Square() : base(){}
+
+        public Square(double side)
+        {
+            this.side = side;
+        }
+
+        public override double Area()
+        {
+            return (side * side);
+        }
+
+        public override double Environment()
+        {
+            return 4 * side;
+        }
+    }
+
+
+}

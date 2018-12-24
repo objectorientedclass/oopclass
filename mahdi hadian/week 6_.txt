@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication27
+{
+    class datetest
+    {
+        static void Main(string[] args)
+        {
+public class date1 : date1
+datetime=5
+datetime = float.Parse(Console.ReadLine());
+monthtime=9
+monthtime = float.Parse(Console.ReadLine());
+yeartime=97
+yeartime = float.Parse(Console.ReadLine());
+System.Console.WriteLine(\n);
+{
+//////////////////////////////////////////////////////////////
+
+}
+public class date2 : date2
+datetime=7
+datetime = float.Parse(Console.ReadLine());
+monthtime=3
+monthtime = float.Parse(Console.ReadLine());
+yeartime=96
+yeartime = float.Parse(Console.ReadLine());
+System.Console.WriteLine("time:");
+        }
+Console.WriteLine("Press any key to exit==>");
+            Console.ReadKey();
+	}
+    }
+}

@@ -1,0 +1,23 @@
+class Date
+    {
+        public int day;
+        public int month;
+        public int year;
+
+        public Date()
+        {
+
+        }
+
+        public Date(int Day , int Month , int Year)
+        {
+            this.day = Day;
+            this.month = Month;
+            this.year = Year;
+        }
+
+        public string ShowDate()
+        {
+            return "Date :" + year.ToString() + "/" + month.ToString() + "/" + day.ToString();
+        }
+    }

@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace مقایسه_اعداد
+{
+    class Avreng
+    {
+        static void Main(string[] args)
+        {
+            int number1, number2, number3;
+            Console.WriteLine("plese enter num1:");
+            number1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("plese enter num2:");
+            number2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("plese enter num3:");
+            number3 = Int32.Parse(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (number1 > number2 && number1 > number3)
+                Console.WriteLine("biger:" + number1);
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (number2 > number1 && number2 > number3)
+                Console.WriteLine("biger:" + number2);
+            Console.ForegroundColor = ConsoleColor.Red;
+            if (number3 > number1 && number3 > number2)
+                Console.WriteLine("biger:" + number3);
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            if (number1 < number2 && number1 < number3)
+                Console.WriteLine("saller:" + number1);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            if (number2 < number1 && number2 < number3)
+                Console.WriteLine("smaller:" + number2);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            if (number3 < number2 && number3 < number1)
+                Console.WriteLine("smaller:" + number3);
+
+
+
+        }
+    }
+
+}

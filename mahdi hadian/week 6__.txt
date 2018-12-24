@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////
+    class time
+    {
+        static void Main(string[] args)
+        {
+public Date( int theMonth, int theDay, int theYear )
+ {
+System.Console.Write("enter number : ");
+int dayte = int.Parse(System.Console.ReadLine());
+		System.Console.Write("enter day : ");
+  int month = int.Parse(System.Console.ReadLine());
+		System.Console.Write("enter month : ");
+     int year = int.Parse(System.Console.ReadLine());
+		System.Console.Write("year number : ");
+	
+System.Console.WriteLine("time:"/n);
+
+        }
+    }
+}

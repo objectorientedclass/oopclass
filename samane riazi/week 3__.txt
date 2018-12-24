@@ -1,0 +1,44 @@
+﻿using System;
+
+namespace helloworld
+{
+        class boom 
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2, num3;
+            Console.WriteLine("enter first number : ");
+            num1 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("enter second number : ");
+            num2 = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("enter third number : ");
+            num3 = Int32.Parse(Console.ReadLine());
+
+
+	//finding biggest number
+            if (num1 > num2 && num1 > num3)
+                Console.WriteLine("biggest number is : " + num1);
+            
+            if (num2 > num1 && num2 > num3)
+                Console.WriteLine("biggest number is : " + num2);
+            
+            if (num3 > num1 && num3 > num2)
+                Console.WriteLine("biggest number is : " + num3);
+
+
+	//finding smallest number
+            if (num1 < num2 && num1 < num3)
+                Console.WriteLine("smallest number is : " + num1);
+
+            if (num2 < num1 && num2 < num3)
+                Console.WriteLine("smallest number is : " + num2);
+
+            if (num3 < num2 && num3 < num1)
+                Console.WriteLine("smallest number is : " + num3);
+
+            Console.ReadKey();
+        }
+    }
+}

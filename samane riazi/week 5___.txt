@@ -1,0 +1,33 @@
+﻿using system;
+namespace app{
+
+    public class myapp{
+        static void main(string[] args){
+            int positive, negative, zero, tenArray[10] ;
+            
+            do{
+                tenArray[i] = Int.Parse(console.Readline());
+                i++; 
+            }while(i<10)
+
+            i = 0;
+
+            foreach(int res : tenArray[i]){
+                if(res > 0)
+                    positive++;
+                elseif(res < 0)
+                    negative++;
+                else if(res == 0)
+                    zero++;
+
+                i++;
+            }
+
+            console.writeLine("zero numbers count is : {0}\nnegative numbers count is : {1}\positive numbers count is : {2}"
+                    , zero, negative, positive );
+
+            console.ReadKey();
+        }
+    }
+
+}

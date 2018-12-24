@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication21
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float a; int b = 0, c = 0, d = 0;
+            do
+            {
+                a = float.Parse(Console.ReadLine());
+                if (a > 0)
+                {
+                    b = b + 1;
+                }
+                if (a == 0)
+                {
+                    c = c + 1;
+                }
+                if (a < 0)
+                {
+                    d = d + 1;
+                }
+
+            }
+            while (a!=1);
+            Console.WriteLine("tedade adad mosbat:{0}", b);
+            Console.WriteLine("\n");
+            Console.WriteLine("tedade adad sefr:{0}", c);
+            Console.WriteLine("\n");
+            Console.WriteLine("tedade adad manfi:{0}", d);
+            Console.WriteLine("\n");
+            Console.WriteLine("press any key to exit==>:{0}", b);
+            Console.ReadKey();
+        }
+    }
+}
